@@ -170,13 +170,3 @@ extension ViewController : PhotoDelegate {
 		collectionView.deleteItemsAtIndexPaths([indexPath])
 	}
 }
-
-// MARK: - FlowLayout Delegate
-extension ViewController : UICollectionViewDelegateFlowLayout {
-	//1
-	func collectionView(collectionView: UICollectionView,
-		layout collectionViewLayout: UICollectionViewLayout,
-		sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-			return CGSize(width: 200, height: 200)
-	}
- }

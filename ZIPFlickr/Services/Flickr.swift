@@ -67,12 +67,12 @@ class Flickr:FlickrService {
 	}
 	
 	func getImageForSource(source:PhotoSource, large: Bool, completed: ImageReceived) {
-		if let pngData = source.smallImage {
+		if !large, let pngData = source.smallImage {
 			completed(UIImage(data: pngData))
 			return
 		}
 		
-		let size = large ? "o" : "m"
+		let size = large ? "b" : "m"
 		guard let server = source.server, id = source.id, secret = source.secret else {
 			completed(nil)
 			return

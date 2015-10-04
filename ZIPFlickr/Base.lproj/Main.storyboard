@@ -77,6 +77,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="U7x-Yv-Hvq" secondAttribute="trailing" constant="18" id="14B-qR-3OK"/>
                                     <constraint firstAttribute="height" constant="40" id="1c4-By-bX4"/>
                                     <constraint firstItem="bXs-9H-T54" firstAttribute="centerY" secondItem="sar-Yt-Zky" secondAttribute="centerY" id="5BJ-qR-XhG"/>
                                     <constraint firstItem="U7x-Yv-Hvq" firstAttribute="leading" secondItem="bDA-We-9hj" secondAttribute="leading" constant="280" id="CCf-G8-xud"/>
@@ -84,10 +85,16 @@
                                     <constraint firstItem="sar-Yt-Zky" firstAttribute="leading" secondItem="bDA-We-9hj" secondAttribute="leading" constant="16" id="Oza-jd-u0B"/>
                                     <constraint firstItem="hQo-ey-1OC" firstAttribute="leading" secondItem="bXs-9H-T54" secondAttribute="trailing" constant="17" id="VKr-a6-LkH"/>
                                     <constraint firstItem="hQo-ey-1OC" firstAttribute="centerX" secondItem="U7x-Yv-Hvq" secondAttribute="centerX" id="Vqb-Mn-bMm"/>
+                                    <constraint firstAttribute="trailing" secondItem="hQo-ey-1OC" secondAttribute="trailing" constant="14" id="bWI-pW-Utd"/>
                                     <constraint firstItem="U7x-Yv-Hvq" firstAttribute="centerY" secondItem="bDA-We-9hj" secondAttribute="centerY" id="cOd-5a-TOa"/>
                                     <constraint firstItem="hQo-ey-1OC" firstAttribute="centerY" secondItem="U7x-Yv-Hvq" secondAttribute="centerY" id="dim-vk-vUX"/>
                                     <constraint firstItem="bXs-9H-T54" firstAttribute="leading" secondItem="sar-Yt-Zky" secondAttribute="trailing" constant="8" id="xcZ-7f-pr6"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CCf-G8-xud"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iYo-wb-JZs">
                                 <rect key="frame" x="0.0" y="42" width="320" height="398"/>
