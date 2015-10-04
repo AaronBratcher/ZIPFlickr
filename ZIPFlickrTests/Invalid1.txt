@@ -1,0 +1,1 @@
+{ "stat": "fail", "code": "999", "message": "Not a valid latitude" }
