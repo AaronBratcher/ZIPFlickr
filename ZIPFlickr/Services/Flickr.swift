@@ -195,7 +195,8 @@ private extension Flickr {
 	typealias SourceDownloaded = ([[String:AnyObject]]?)->()
 
 	func downloadSourceList(lat: Double, lon: Double, radius: Int, downloaded:SourceDownloaded) {
-		let key = "a151c839af1ac01c132de4e91113c249"
+		let key = "4210e25d2a4367fc30587df08a13fe6c"
+		
 		let urlString = "https://api.flickr.com/services/rest/"
 		let parameters:[String:AnyObject] = ["method":"flickr.photos.search", "api_key":key, "lat":lat, "lon":lon, "radius":radius, "radius_units":"mi", "format":"json", "nojsoncallback":1]
 

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
 	@IBOutlet weak var distance: UISlider!
 	@IBOutlet weak var refresh: UIButton!
 	@IBOutlet weak var progressWheel: UIActivityIndicatorView!
+	@IBOutlet weak var bottomViewConstraint: NSLayoutConstraint!
 	
 	lazy var coreDataStack = CoreDataStack()
 	lazy var flickrService:FlickrService = Flickr(context: self.coreDataStack.context)
@@ -80,6 +81,11 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func segmentChanged(sender: AnyObject) {
+		UIView.animateWithDuration(0.5) { () -> Void in
+			self.bottomViewConstraint.constant = (self.favoritesOnly() ? -40 : 0)
+			self.view.layoutIfNeeded()
+		}
+		
 		collectionView.reloadData()
 	}
 

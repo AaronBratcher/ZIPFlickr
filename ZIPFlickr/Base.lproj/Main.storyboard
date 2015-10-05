@@ -179,6 +179,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="bottomViewConstraint" destination="nbG-n1-JeX" id="rTh-Qr-eOq"/>
                         <outlet property="collectionView" destination="iYo-wb-JZs" id="Dse-8h-hfe"/>
                         <outlet property="distance" destination="bXs-9H-T54" id="urS-DI-afJ"/>
                         <outlet property="progressWheel" destination="hQo-ey-1OC" id="7In-yT-CfN"/>
